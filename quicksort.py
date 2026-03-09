@@ -21,7 +21,7 @@ class _Range:
     right: int
 
 
-def quicksort_inplace(values: MutableSequence[T]) -> None:
+def quicksort_inplace_x(values: MutableSequence[T]) -> None:
     if len(values) < 2:
         return
 
