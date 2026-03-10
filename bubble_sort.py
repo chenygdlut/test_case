@@ -20,3 +20,41 @@ if __name__ == "__main__":
     print("原始数组:", test_arr)
     sorted_arr = bubble_sort(test_arr)
     print("排序后数组:", sorted_arr)
+
+import unittest
+
+
+class TestBubbleSort(unittest.TestCase):
+    def test_empty(self) -> None:
+        self.assertEqual(bubble_sort([]), [])
+
+    def test_single(self) -> None:
+        self.assertEqual(bubble_sort([1]), [1])
+
+    def test_sorted(self) -> None:
+        self.assertEqual(bubble_sort([1, 2, 3, 4]), [1, 2, 3, 4])
+
+    def test_reverse(self) -> None:
+        self.assertEqual(bubble_sort([4, 3, 2, 1]), [1, 2, 3, 4])
+
+    def test_duplicates(self) -> None:
+        self.assertEqual(bubble_sort([3, 1, 2, 3, 3, 0]), [0, 1, 2, 3, 3, 3])
+
+    def test_negative_numbers(self) -> None:
+        self.assertEqual(bubble_sort([0, -1, 5, -10, 3]), [-10, -1, 0, 3, 5])
+
+    def test_inplace(self) -> None:
+        values = [3, 2, 1]
+        result = bubble_sort(values)
+        self.assertEqual(result, [1, 2, 3])
+
+    def test_random_against_sorted(self) -> None:
+        import random
+        random.seed(20260309)
+        for _ in range(200):
+            values = [random.randint(-50, 50) for _ in range(random.randint(0, 200))]
+            self.assertEqual(bubble_sort(values), sorted(values))
+
+
+if __name__ == "__main__":
+    unittest.main()
