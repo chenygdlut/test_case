@@ -56,7 +56,7 @@ def quicksort_inplace_x(values: MutableSequence[T]) -> None:
                 left = i + 1
 
 
-class TestQuickSort(unittest.TestCase):
+class TestQuickSort_Inplace(unittest.TestCase):
     def test_empty(self) -> None:
         self.assertEqual(quicksort([]), [])
 
