@@ -21,7 +21,7 @@ class _Range:
     right: int
 
 
-def quicksort_inplace(values: MutableSequence[T]) -> None:
+def quicksort_inplace_x(values: MutableSequence[T]) -> None:
     if len(values) < 2:
         return
 
@@ -77,7 +77,7 @@ def quicksort_recursive(values: MutableSequence[T]) -> None:
     _quicksort(0, len(values) - 1)
 
 
-class TestQuickSort(unittest.TestCase):
+class TestQuickSort_Inplace(unittest.TestCase):
     def test_empty(self) -> None:
         self.assertEqual(quicksort([]), [])
 
