@@ -56,6 +56,27 @@ def quicksort_inplace_x(values: MutableSequence[T]) -> None:
                 left = i + 1
 
 
+def quicksort_recursive(values: MutableSequence[T]) -> None:
+    def _quicksort(low: int, high: int) -> None:
+        if low < high:
+            pivot_index = random.randint(low, high)
+            values[pivot_index], values[high] = values[high], values[pivot_index]
+            pivot = values[high]
+
+            i = low
+            for j in range(low, high):
+                if values[j] <= pivot:
+                    values[i], values[j] = values[j], values[i]
+                    i += 1
+
+            values[i], values[high] = values[high], values[i]
+
+            _quicksort(low, i - 1)
+            _quicksort(i + 1, high)
+
+    _quicksort(0, len(values) - 1)
+
+
 class TestQuickSort_Inplace(unittest.TestCase):
     def test_empty(self) -> None:
         self.assertEqual(quicksort([]), [])
@@ -78,6 +99,11 @@ class TestQuickSort_Inplace(unittest.TestCase):
     def test_inplace(self) -> None:
         values = [3, 2, 1]
         quicksort_inplace(values)
+        self.assertEqual(values, [1, 2, 3])
+
+    def test_recursive(self) -> None:
+        values = [3, 2, 1]
+        quicksort_recursive(values)
         self.assertEqual(values, [1, 2, 3])
 
     def test_random_against_sorted(self) -> None:
