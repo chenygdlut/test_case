@@ -1,0 +1,183 @@
+{
+  "entries": {
+    "919c85ce5cea": {
+      "id": "919c85ce5cea",
+      "content": "Self-evolving systems can improve their performance over time through machine learning.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.098273",
+      "last_accessed": null,
+      "tags": [
+        "ml",
+        "self-improvement",
+        "ai"
+      ],
+      "source": "system"
+    },
+    "6bd2f228084d": {
+      "id": "6bd2f228084d",
+      "content": "Feedback loops are essential for self-improvement in intelligent systems.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.098464",
+      "last_accessed": null,
+      "tags": [
+        "feedback",
+        "optimization",
+        "systems"
+      ],
+      "source": "system"
+    },
+    "889461853d4a": {
+      "id": "889461853d4a",
+      "content": "Python is a high-level programming language known for its readability.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 1,
+      "failure_count": 0,
+      "relevance_score": 1.0,
+      "created_at": "2026-05-08T08:07:38.098685",
+      "last_accessed": null,
+      "tags": [
+        "python",
+        "programming",
+        "language"
+      ],
+      "source": "manual"
+    },
+    "2ecb2a46b62d": {
+      "id": "2ecb2a46b62d",
+      "content": "Machine learning is a subset of AI that enables systems to learn from data.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.099263",
+      "last_accessed": null,
+      "tags": [
+        "ml",
+        "ai",
+        "data"
+      ],
+      "source": "manual"
+    },
+    "05ee74f91cf4": {
+      "id": "05ee74f91cf4",
+      "content": "Self-evolving systems can improve their performance over time.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.099743",
+      "last_accessed": null,
+      "tags": [
+        "self-improvement",
+        "systems",
+        "optimization"
+      ],
+      "source": "manual"
+    },
+    "194947785046": {
+      "id": "194947785046",
+      "content": "Feedback loops are essential for continuous improvement.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.100261",
+      "last_accessed": null,
+      "tags": [
+        "feedback",
+        "optimization",
+        "systems"
+      ],
+      "source": "manual"
+    },
+    "512e672b681c": {
+      "id": "512e672b681c",
+      "content": "AI involves neural networks and deep learning architectures.",
+      "metadata": {},
+      "embedding": null,
+      "access_count": 0,
+      "success_count": 0,
+      "failure_count": 0,
+      "relevance_score": 0.5,
+      "created_at": "2026-05-08T08:07:38.102239",
+      "last_accessed": null,
+      "tags": [
+        "learned",
+        "improvement"
+      ],
+      "source": "interaction_feedback"
+    }
+  },
+  "tag_index": {
+    "ml": [
+      "2ecb2a46b62d",
+      "919c85ce5cea"
+    ],
+    "self-improvement": [
+      "05ee74f91cf4",
+      "919c85ce5cea"
+    ],
+    "ai": [
+      "2ecb2a46b62d",
+      "919c85ce5cea"
+    ],
+    "feedback": [
+      "194947785046",
+      "6bd2f228084d"
+    ],
+    "optimization": [
+      "05ee74f91cf4",
+      "194947785046",
+      "6bd2f228084d"
+    ],
+    "systems": [
+      "05ee74f91cf4",
+      "194947785046",
+      "6bd2f228084d"
+    ],
+    "python": [
+      "889461853d4a"
+    ],
+    "programming": [
+      "889461853d4a"
+    ],
+    "language": [
+      "889461853d4a"
+    ],
+    "data": [
+      "2ecb2a46b62d"
+    ],
+    "learned": [
+      "512e672b681c"
+    ],
+    "improvement": [
+      "512e672b681c"
+    ]
+  },
+  "query_history": [
+    {
+      "query": "What is Python?",
+      "entry_id": "889461853d4a",
+      "feedback": "positive",
+      "timestamp": "2026-05-08T08:07:38.101817"
+    }
+  ]
+}
